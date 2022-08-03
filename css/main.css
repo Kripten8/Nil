@@ -82,6 +82,8 @@ body {
   height: 320px;
 }
 
+
+
 .swiper-slide {
   display: flex;
   align-items: center;
@@ -208,12 +210,27 @@ body {
   #cl-1{height: 500px;}
   #cl-2{height: 500px;}
   #cl-3{height: 500px;}
+  #cl{width: 100%!important;}
   
   #canvas {
   border: 1px soild black;
-  position: absolute;
+  /* position: absolute; */
   z-index: -999;
   height: 100%;
-  /* width: 100%; */
+  /* width: 100%!important; */
+  }
+
+  #aa{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* overflow-y: hidden; */
+  }
+
+  .swiper {
+  width: 200px;
+}
+  .swiper2 {
+  width: 80%;
 }
 }
