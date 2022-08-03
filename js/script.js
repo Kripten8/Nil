@@ -244,6 +244,29 @@ function lyrics() {
         $(this).html(`Georgia, pulled me in, I asked to... Love her, once again You fell, I caught you`)
         lyrics();
     });
+    lyr.delay(16000).queue(function (lyrics) {
+        $(this).html(`I'll never let you go again, like I did Oh, I used to say`)
+        lyrics();
+    });
+    lyr.delay(11000).queue(function (lyrics) {
+        $(this).html(`"I would never fall in love again, until I found her" I said, "I would never fall, unless it's you I fall into" I was lost within the darkness, but then I found her I found you`)
+        lyrics();
+    });
+    lyr.delay(35000).queue(function (lyrics) {
+        $(this).html(`Sappi che ora che sei mia non ti lascerò andare via!`)
+        lyrics();
+    });
+    lyr.delay(5000).queue(function (lyrics) {
+        $(this).html(`"I would never fall in love again, until I found her" I said, "I would never fall, unless it's you I fall into" I was lost within the darkness, but then I found her I found you`)
+        lyrics();
+    });
+    lyr.delay(1000).queue(function (lyrics) {
+        $("#ka").animate({ left: "0px" });
+        $("#te").animate({ right: "0px" });
+        $("#heart").css({ display: "" });
+        $("#cl").addClass("none");
+        $("#cover").css({ "z-index": "2" });
+    });
 }
 
 /* -------------------------------------------------------------------------- */
