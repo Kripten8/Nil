@@ -204,7 +204,7 @@ function kate() {
     calcTime(); 
     // audio
     var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', '../audio/Stephen Sanchez - Until I Found You (Official Audio).mp3');
+    audioElement.setAttribute('src', 'https://github.com/Tubal3h/Kate/blob/main/audio/Stephen%20Sanchez%20-%20Until%20I%20Found%20You%20(Official%20Audio).mp3?raw=true');
     audioElement.play();
     audioElement.volume = 0.1;
     /* -------------------------------------------------------------------------- */
