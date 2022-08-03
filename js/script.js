@@ -260,7 +260,7 @@ function lyrics() {
         $(this).html(`"I would never fall in love again, until I found her" I said, "I would never fall, unless it's you I fall into" I was lost within the darkness, but then I found her I found you`)
         lyrics();
     });
-    lyr.delay(1000).queue(function (lyrics) {
+    lyr.delay(41000).queue(function (lyrics) {
         $("#ka").animate({ left: "0px" });
         $("#te").animate({ right: "0px" });
         $("#heart").css({ display: "" });
