@@ -266,8 +266,8 @@ body {
   /* width: 100%!important; */
   }
 
-  #ka h1{ left: -180px; position: absolute;transform: rotate(-90deg);}
-  #te h1{ left: -180px; bottom: 220px; position: absolute;transform: rotate(-90deg);}
+  #ka h1{ left: -270px; top: 200px; position: absolute;transform: rotate(-90deg);}
+  #te h1{ left: -270px; bottom: 220px; position: absolute;transform: rotate(-90deg);}
 
   
 
