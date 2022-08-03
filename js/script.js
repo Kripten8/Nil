@@ -261,11 +261,7 @@ function lyrics() {
         lyrics();
     });
     lyr.delay(41000).queue(function (lyrics) {
-        $("#ka").animate({ left: "0px" });
-        $("#te").animate({ right: "0px" });
-        $("#heart").css({ display: "" });
-        $("#cl").addClass("none");
-        $("#cover").css({ "z-index": "2" });
+       location.reload();
     });
 }
 
