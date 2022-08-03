@@ -1,0 +1,286 @@
+/* ---------------------------------- Font ---------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+/* -------------------------------------------------------------------------- */
+.box{border: 1px red solid;}
+
+/* ---------------------------------- ROOT ---------------------------------- */
+:root {
+    --color1: #1B0044;
+    --color2: #5727A3;
+    --color3: #9153F4;
+    --color4: #D6C5F0;
+    
+    position: relative;
+    box-sizing: border-box;
+}
+
+*{
+    font-family: 'Major Mono Display', monospace;
+    color: var(--color4);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+body {
+    background-color: var(--color2);
+    /* width: 100%; */
+    min-height: 100vh;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+/* ------------------------------ CLASS default ----------------------------- */
+.over{overflow: hidden;}
+.min-vh-50{min-height: 50vh;}
+.radius {border-radius: 15px;}
+.gif {width: 15em;}
+.none{display: none!important;}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- #C-cover -------------------------------- */
+#cover{z-index: 2;
+  /* display: none!important; */
+}    
+.kate_font{
+    font-size: 15em;
+
+}
+
+.kate_img{
+    width: 3vw;
+}
+
+#C_kate{
+    top: 60vh;
+}
+
+#ka{border-right: var(--color1) solid 2px;background-color: var(--color3);position: relative;}
+
+#te{border-left: var(--color3) solid 2px; background-color: var(--color1);position: relative;}
+
+/* -------------------------------------------------------------------------- */
+#lyrics{
+    border-radius: 15px;
+    border-top: var(--color1) 2px solid;
+    border-bottom: var(--color3) 2px solid;
+    background-color: var(--color1);
+}
+
+#inizio {
+    transform: rotate(30deg);
+    top: 5em;
+    background-color: var(--color1);
+}
+
+#photo1 {
+    width: 20em;
+}
+/* ------------------------------------ 1 ----------------------------------- */
+/* html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+
+.swiper {
+  width: 80%;
+  height: 80%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ------------------------------------ 2 ----------------------------------- */
+/* html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+
+/* html,
+body {
+  position: relative;
+  height: 100%;
+} */
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.swiper2 {
+  width: 240px;
+  height: 320px;
+}
+
+.swiper-slide2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: rgba(206, 17, 17, 0);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgba(0, 140, 255, 0);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgba(0, 140, 255, 0);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgba(0, 140, 255, 0);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgba(0, 140, 255, 0);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgba(0, 140, 255, 0);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgba(0, 140, 255, 0);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgba(0, 140, 255, 0);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgba(0, 140, 255, 0);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgba(0, 140, 255, 0);
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+
+div.btnbg {
+  position:fixed;
+  left:0;
+  top:0;
+}
+
+#cc{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -5;
+}
+
+html,
+body {
+  /* height: 100%; */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+#canvas {
+  border: 1px soild black;
+  position: absolute;
+  z-index: -999;
+  /* height: 100%; */
+  /* width: 100%; */
+}
+
+@media screen and (max-width: 430px) {
+  /* #cover{display: none!important;} */
+  /* #cover{background-color: wheat;}     */
+  #cl-1{height: 500px;}
+  #cl-2{height: 500px;}
+  #cl-3{height: 500px;}
+  #cl{width: 100%!important;}
+  
+  #canvas {
+  border: 1px soild black;
+  /* position: absolute; */
+  z-index: -999;
+  height: 100%;
+  /* width: 100%!important; */
+  }
+
+  #ka h1{ left: -180px; position: absolute;transform: rotate(-90deg);}
+  #te h1{ left: -180px; bottom: 220px; position: absolute;transform: rotate(-90deg);}
+
+  
+
+  #aa{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper {
+  width: 200px;
+}
+  .swiper2 {
+  width: 80%;
+}
+}
