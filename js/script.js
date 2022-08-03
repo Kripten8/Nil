@@ -1,17 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
+    
     var swiper = new Swiper(".mySwiper", {
-        effect: "cards",
-        grabCursor: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-    });
-
-    /* -------------------------------------------------------------------------- */
-    /* -------------------------------------------------------------------------- */
-    /* -------------------------------------------------------------------------- */
-    var swiper = new Swiper(".mySwiper2", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
@@ -19,14 +8,25 @@ window.addEventListener('DOMContentLoaded', function () {
             disableOnInteraction: false,
         },
         pagination: {
-            // el: ".swiper-pagination",
+            el: ".swiper-pagination",
             clickable: true,
         },
         navigation: {
-            // nextEl: ".swiper-button-next",
-            // prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
     });
+    
+    var swiper = new Swiper(".mySwiper2", {
+        effect: "cards",
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+
+
 
     if (window.matchMedia('(max-width: 430px)').matches) {
         $("#cl").addClass("flex-column");
@@ -206,9 +206,10 @@ function kate() {
     var audioElement = document.createElement('audio');
     audioElement.setAttribute('src', '../audio/Stephen Sanchez - Until I Found You (Official Audio).mp3');
     audioElement.play();
-    audioElement.volume = 0.0;
+    audioElement.volume = 0.1;
     /* -------------------------------------------------------------------------- */
     lyrics()
+    test()
 }
 
 /* -------------------------------------------------------------------------- */
@@ -264,7 +265,7 @@ function calcTime() {
         var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
         console.log(timeleft)
-        $("#CurrentTime").text(`y ${year},m ${month}, d ${days},h ${hours},m ${minutes},s ${seconds} `)
+        $("#CurrentTime").text(`Year ${year} Month ${month} Day ${days} Time ${hours}:${minutes}:${seconds} `)
     }, 1000)
     
     // $("#CurrentTime").text(`d ${days},d ${hours},d ${minutes},d ${seconds} `)
@@ -1095,5 +1096,31 @@ window.addEventListener('load', function (e) {
 
 /* -------------------------------------------------------------------------- */
 
+function test() {
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 
+    var swiper = new Swiper(".mySwiper2", {
+        effect: "cards",
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+}
 /* -------------------------------------------------------------------------- */
